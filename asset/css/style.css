@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.container > h1 {
+  font-size: 6rem;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.container h1::after {
+  content: "";
+  position: absolute;
+  bottom: -4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16rem;
+  height: 2px;
+  background: linear-gradient(to left, #fa5136, #60231a);
+}
+.container .introduce {
+  width: 50%;
+  height: 30rem;
+  margin: 8rem auto;
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 1rem 1rem 1rem 1rem rgb(231, 213, 213);
+  overflow: hidden;
+}
+.container .introduce #slider {
+  position: absolute;
+  width: 100%;
+  padding-right: 6rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.container .introduce__user {
+  padding: 4rem;
+  text-align: left;
+  height: 30rem;
+}
+.container .introduce__user .user__header {
+  display: flex;
+  align-items: center;
+}
+.container .introduce__user .user__header--img {
+  width: 6rem;
+  border-radius: 50%;
+}
+.container .introduce__user .user__header--content {
+  display: inline-block;
+  margin-left: 2rem;
+}
+.container .introduce__user .user__header--content h1 {
+  font-size: 3rem;
+  color: #fa5136;
+}
+.container .introduce__user .user__header--content p {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+.container .introduce__user .user__content {
+  font-size: 2rem;
+  margin-top: 4rem;
+  width: 90%;
+}
+.container .introduce .control {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fa5136;
+  width: 6rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .introduce .control__up {
+  width: 4rem;
+  cursor: pointer;
+}
+.container .introduce .control__down {
+  width: 4rem;
+  cursor: pointer;
+}
+.container .introduce::after {
+  position: absolute;
+  top: -10rem;
+  left: -10rem;
+  width: 20rem;
+  height: 20rem;
+  content: "";
+  border-radius: 50%;
+  background-color: #fa5136;
+  z-index: -10;
+}
+
+/*# sourceMappingURL=style.css.map */

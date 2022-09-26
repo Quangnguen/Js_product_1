@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js_product_2</title>
+    <link rel="stylesheet" href="/asset/css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Reviews</h1>
+        
+        <div class="introduce">
+            <div  id="slider">
+
+                <!-- user-1 -->
+                <div class="introduce__user">
+                    <div class="user__header">
+                    <img src="/asset/img/Review_Slider_Img/Review_Slider_Img/pic1.jpg" class="user__header--img">
+                    <div class="user__header--content">
+                        <h1>Merlin Nguyen</h1>
+                        <p>Senior Developer</p>
+                   </div>
+                </div>
+                <p class="user__content">
+                    Many people feel that there is a limited amount of abundance
+                    weather, or chance to succeed in life. Furthermore, there is a solid beleif
+                    that it one person succeeds, another must fail. Many people feel that
+                    there is a limited amount of abundance.
+                </p>
+            </div>
+
+            <!-- user-2 -->
+            <div class="introduce__user">
+                <div class="user__header">
+                    <img src="/asset/img/Review_Slider_Img/Review_Slider_Img/pic2.jpg" class="user__header--img">
+                   <div class="user__header--content">
+                        <h1>Merlin Nguyen</h1>
+                        <p>Senior Developer</p>
+                   </div>
+                </div>
+                <p class="user__content">
+                    Many people feel that there is a limited amount of abundance
+                    weather, or chance to succeed in life. Furthermore, there is a solid beleif
+                    that it one person succeeds, another must fail. Many people feel that
+                    there is a limited amount of abundance.
+                </p>
+            </div>
+
+            <!-- user-3 -->
+            <div class="introduce__user">
+                <div class="user__header">
+                    <img src="/asset/img/Review_Slider_Img/Review_Slider_Img/pic3.jpg" class="user__header--img">
+                   <div class="user__header--content">
+                        <h1>Merlin Nguyen</h1>
+                        <p>Senior Developer</p>
+                    </div>
+                </div>
+                <p class="user__content">
+                    Many people feel that there is a limited amount of abundance
+                    weather, or chance to succeed in life. Furthermore, there is a solid beleif
+                    that it one person succeeds, another must fail. Many people feel that
+                    there is a limited amount of abundance.
+                </p>
+            </div>
+
+            <!-- user-4 -->
+            <div class="introduce__user">
+                <div class="user__header">
+                    <img src="/asset/img/Review_Slider_Img/Review_Slider_Img/pic4.jpg" class="user__header--img">
+                   <div class="user__header--content">
+                       <h1>Merlin Nguyen</h1>
+                       <p>Senior Developer</p>
+                   </div>
+                </div>
+                <p class="user__content">
+                    Many people feel that there is a limited amount of abundance
+                    weather, or chance to succeed in life. Furthermore, there is a solid beleif
+                    that it one person succeeds, another must fail. Many people feel that
+                    there is a limited amount of abundance.
+                </p>
+            </div>
+        </div>
+        <div class="control">
+            <img src="/asset/img/Review_Slider_Img/Review_Slider_Img/up-arrow.png" class="control__up" id="upArrow">
+            <img src="/asset/img/Review_Slider_Img/Review_Slider_Img/down-arrow.png" class="control__down" id="downArrow">
+        </div>
+        </div>
+    </div>
+
+    <script>
+        var slider = document.getElementById("slider");
+        var upArrow = document.getElementById("upArrow");
+        var downArrow = document.getElementById("downArrow");
+        let x = 0;
+        upArrow.onclick = function() {
+            if (x >"-900")
+            {
+                x = x - 300;
+                slider.style.top = x + "px";
+            }
+        }
+        downArrow.onclick = function() {
+            if (x < 0)
+            {
+                x = x + 300;
+                slider.style.top = x + "px";
+            }
+        }
+    </script>
+</body>
+</html>

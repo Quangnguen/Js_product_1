@@ -1,0 +1,16 @@
+{
+  "name": "js__2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass asset/scss/main.scss asset/css/style.css --watch"
+  },
+  "author": "quangnguyenn",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.3",
+    "sass": "^1.55.0"
+  }
+}

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+$--primary-color: #fa5136;
+
+.container {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    & > h1{
+        font-size: 6rem;
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+        position: relative;
+    }
+
+    & h1::after {
+        content: "";
+        position: absolute;
+        bottom: -4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 16rem;
+        height: 2px;
+        background: linear-gradient(to left, $--primary-color, #60231a);
+    }
+
+    
+    .introduce {
+        width: 50%;
+        height: 30rem;
+        margin: 8rem auto;
+        position: relative;
+        border-radius: 2rem;
+        box-shadow: 1rem 1rem 1rem 1rem rgb(231, 213, 213);
+        overflow: hidden;
+
+        & #slider {
+            position: absolute;
+            width: 100%;
+            padding-right: 6rem;
+            top: 0;
+            left: 0;
+            bottom: 0;
+        }
+        &__user {
+            padding: 4rem;
+            text-align: left;
+            height: 30rem;
+
+            & .user__header {
+                display: flex;
+                align-items: center;
+                &--img {
+                    width: 6rem;
+                    border-radius: 50%;
+                    
+                }
+
+                &--content {
+                    display: inline-block;
+                    margin-left: 2rem;
+                    & h1 {
+                        font-size: 3rem;
+                        color: $--primary-color;
+                        
+                    }
+                    & p {
+                        font-size: 2rem;
+                        margin: .5rem 0;
+                    }
+                }
+            }
+
+            & .user__content {
+                font-size: 2rem;
+                margin-top: 4rem;
+                width: 90%;
+            }
+        }
+
+
+        & .control {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $--primary-color;
+            width: 6rem;
+            border-top-right-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            &__up {
+                width: 4rem;
+                cursor: pointer;
+            }
+
+            &__down {
+                width: 4rem;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    & .introduce::after
+    {
+        position: absolute;
+        top: -10rem;
+        left: -10rem;
+        width: 20rem;
+        height: 20rem;
+        content: '';
+        border-radius: 50%;
+        background-color: $--primary-color;
+        z-index: -10;
+    }
+    
+}
